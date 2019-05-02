@@ -202,3 +202,7 @@ include_directories(
 add_executable(range_sensor_msgs_publisher src/range_sensor_msgs_publisher.cpp)
 target_link_libraries(range_sensor_msgs_publisher ${catkin_LIBRARIES})
 add_dependencies(range_sensor_msgs_publisher range_visualizer_generate_messages_cpp)
+
+add_executable(range_publisher src/range_publisher.cpp)
+target_link_libraries(range_publisher ${catkin_LIBRARIES})
+add_dependencies(range_publisher range_visualizer_generate_messages_cpp)
